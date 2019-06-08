@@ -1,49 +1,122 @@
 @import url(sanitize.css);
-
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Sriracha');
 body {
-    background-color:#fafafa;
+    background-color: #fefefe;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
 }
-h1{
-    font-size: 24px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+header {
+    background-color: #422814;
+    padding: 10px;
+    color: #fff;
+}
+
+header h1 {
     margin: 0;
-}       
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+}
+
+.information h1 {
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.information .type {
+    display: inline;
+    background-color:  #e35a4d;
+    padding: 3px 5px;
+    font-size: .8em;
+    color:#fff;
+}
+
+.description {
+    clear:left;
+}
 
 .content {
     background-color: #fff;
-    width: 600px;
-    margin: 10px auto;
-    border: 1px solid #d1d1d1;
-    padding: 30px;
-}
-input {
-    border: 0;
-    border-bottom: 1px solid #d1d1d1;
-    width: 100%;
-    font-size: 1.2em;
-    padding: 8px;
-}
-button {
-    width: 100%;
-    background-color: #2096f3;
-    color:#fff;
-    border: 0;
-    padding: 15px;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0,0,0,.4);
-}
-.control {
-   margin-bottom: 3em;
-}
-label {
-    display: block;
-    margin-bottom: .5em;
+    padding: 20px;
 }
 
-.required {
-    color: #f33;
-    font-size: .9em;
-    background-color: #fee;
-    padding: 3px;
-    font-weight: bold;
-    margin-right: .3em;
+.songs {
+    margin: 0 0 20px;
 }
+
+.songs h2 {
+    clear: left;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    background-color: #e6e4dd;
+    padding: 5px 10px;
+}
+
+.songs ol {
+    padding: 0;
+    margin: 0;
+    list-style: decimal inside;
+}
+
+.songs li {
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    float: left;
+    padding: 5px 10px;
+
+}
+
+.clearfix:after {
+    content:" ";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    font-size:  80%;
+}
+
+.description img {
+    float: left;
+    margin: 0 10px 10px 0;
+    transition: opacity 1s ease 0s;
+}
+
+@media only screen and (max-width: 600px) {
+    .description img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        padding: 5px;
+    }
+    header h1 {
+        font-size: 12px
+    }
+    .songs li {
+        float: none;
+        width: inherit;
+    }
+}
+
+.description img:hover {
+    opacity: .5;
+}
+
+
