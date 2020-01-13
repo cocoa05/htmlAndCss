@@ -1,0 +1,45 @@
+.container {
+  width: 1170px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url(img/main.jpg);
+  background-size: cover;
+  text-align: center;
+
+}
+
+.top-wrapper h1 {
+  opacity: 0.5;
+  font-size: 50px;
+  letter-spacing: 20px;
+}
+
+.btn-wrapper {
+ margin: 20px 0;
+}
+
+.btn-signup  {
+  margin-right: 10px;
+}
+
+.btn-signin {
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+
+ }
+
+.btn hover {
+  opacity: 1;
+
+}
